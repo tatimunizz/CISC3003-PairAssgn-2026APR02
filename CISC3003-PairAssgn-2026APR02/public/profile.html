@@ -3,115 +3,347 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PixelWave Web Studio | Profile</title>
-    <link rel="stylesheet" href="css/profile.css">
+    <title>Profile - CodeDuo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="profile.css">
 </head>
-
 <body>
+    <!-- Header (same as index.html but with different active link) -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="nav-content">
+                <a href="index.html" class="logo">
+                    <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="16 18 22 12 16 6"></polyline>
+                        <polyline points="8 6 2 12 8 18"></polyline>
+                    </svg>
+                    <span>CodeDuo</span>
+                </a>
 
-<main>
+                <div class="desktop-nav">
+                    <a href="index.html" class="nav-link">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        </svg>
+                        <span>Home</span>
+                    </a>
+                    <a href="profile.html" class="nav-link active">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                        <span>Profile</span>
+                    </a>
+                    <a href="summary.html" class="nav-link">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                        </svg>
+                        <span>Summary</span>
+                    </a>
+                    <a href="showcase.html" class="nav-link">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                        </svg>
+                        <span>Showcase</span>
+                    </a>
+                    <a href="qualification.html" class="nav-link">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="8" r="7"></circle>
+                            <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                        </svg>
+                        <span>Qualification</span>
+                    </a>
+                </div>
 
-    <!-- HEADER -->
-    <header>
-        <h1>PixelWave Web Studio</h1>
-        <nav>
-            index.htmlHome</a>
-            profile.htmlProfile</a>
-            summary.htmlSummary</a>
-            showcase.htmlShowcase</a>
-            qualifications.htmlQualifications</a>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <svg class="menu-icon" id="menuIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                    <svg class="close-icon hidden" id="closeIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="mobile-nav hidden" id="mobileNav">
+                <a href="index.html" class="mobile-nav-link">
+                    <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                    </svg>
+                    <span>Home</span>
+                </a>
+                <a href="profile.html" class="mobile-nav-link active">
+                    <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                    <span>Profile</span>
+                </a>
+                <a href="summary.html" class="mobile-nav-link">
+                    <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                        <polyline points="14 2 14 8 20 8"></polyline>
+                    </svg>
+                    <span>Summary</span>
+                </a>
+                <a href="showcase.html" class="mobile-nav-link">
+                    <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                        <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                    </svg>
+                    <span>Showcase</span>
+                </a>
+                <a href="qualification.html" class="mobile-nav-link">
+                    <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="8" r="7"></circle>
+                        <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                    </svg>
+                    <span>Qualification</span>
+                </a>
+            </div>
         </nav>
     </header>
 
-    <!-- HERO -->
-    <section class="hero">
-        <h2>Who We Are</h2>
-        <p>Learn more about our values, goals, inspirations, and what drives our creative work.</p>
-    </section>
-
-    <!-- CONTENT AREA -->
-    <div class="content-area">
-
-        <section class="content">
-
-            <!-- VALUES -->
-            <h2>Our Values and Beliefs</h2>
-            <p>At PixelWave Web Studio, we believe that every website should be both functional and beautiful. Our design values center around:</p>
-            <ul>
-                <li><strong>Clarity</strong> — clean, user‑friendly design.</li>
-                <li><strong>Creativity</strong> — bold ideas with modern layouts.</li>
-                <li><strong>Accessibility</strong> — websites that everyone can use.</li>
-                <li><strong>Integrity</strong> — honest communication and reliable work.</li>
-                <li><strong>Learning</strong> — continuous improvement in our craft.</li>
-            </ul>
-
-            <!-- ASPIRATIONS -->
-            <h2>Our Career Aspirations</h2>
-            <p>We aim to become a trusted design studio that supports businesses and creators around the world. Over the next few years, we hope to:</p>
-            <ul>
-                <li>Develop a strong portfolio of multi‑page business websites.</li>
-                <li>Collaborate with international clients.</li>
-                <li>Expand our services into branding and UI/UX consulting.</li>
-                <li>Master advanced front‑end frameworks.</li>
-                <li>Teach and mentor new web designers.</li>
-            </ul>
-
-            <!-- INTERESTS -->
-            <h2>Our Interests and Hobbies</h2>
-            <p>Beyond web design, we draw inspiration from our personal interests:</p>
-            <ul>
-                <li>Photography and visual storytelling</li>
-                <li>Digital illustration and graphic design</li>
-                <li>Reading design blogs and UI/UX case studies</li>
-                <li>Learning new coding techniques</li>
-                <li>Traveling and exploring new cultures</li>
-            </ul>
-
-            <!-- BLOG -->
-            <h2>Our Blog Posts</h2>
-            <p>We regularly share insights, design principles, and tutorials:</p>
-            <ul class="blog-list">
-                <li><strong>Designing for Mobile First</strong> — why a mobile‑first layout matters.</li>
-                <li><strong>How to Choose Colors for Your Website</strong> — tips for strong branding.</li>
-                <li><strong>Using Flexbox the Right Way</strong> — clean and responsive layouts.</li>
-                <li><strong>Building Your First Portfolio Website</strong> — advice for beginners.</li>
-            </ul>
-
-            <!-- CONTACT -->
-            <h2>Our Contact</h2>
-            <p>If you'd like to work with us, feel free to reach out.</p>
-
-            <div class="contact-box">
-                <p><strong>Email:</strong> info@pixelwave.com</p>
-                <p><strong>Phone:</strong> +000 000 0000</p>
-                <p><strong>Location:</strong> Remote — Worldwide</p>
+    <!-- Main Content -->
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title">Our Profile</h1>
+                <p class="page-subtitle">Get to know us better - our values, aspirations, and passions</p>
             </div>
-
         </section>
 
-        <!-- SIDEBAR -->
-        <aside>
-            <h3>Quick Navigation</h3>
-            <ul>
-                index.html>Home</a></li>
-                <li>showcase.htmlOur Projects</a></li>
-                qualifications.html></li>
-                <li>summary.htmlFuture Directions</a></li>
-            </ul>
+        <!-- Values and Beliefs -->
+        <section class="section">
+            <div class="container">
+                <div class="section-icon-title">
+                    <svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                    </svg>
+                    <h2 class="section-title-left">Our Values and Beliefs</h2>
+                </div>
 
-            <h3>Meet the Team</h3>
-            portfolio-tatiana/index.htmlTop</a>
-            portfolio-partner/index.html>
-        </aside>
+                <div class="values-grid">
+                    <div class="value-card value-blue">
+                        <h3>Quality Over Quantity</h3>
+                        <p>We believe in delivering exceptional work rather than rushing through projects. Every line of code we write is crafted with care and attention to detail, ensuring robust and maintainable solutions.</p>
+                    </div>
+                    <div class="value-card value-green">
+                        <h3>Continuous Learning</h3>
+                        <p>Technology evolves rapidly, and so do we. We're committed to staying current with the latest tools, frameworks, and best practices to provide cutting-edge solutions to our clients.</p>
+                    </div>
+                    <div class="value-card value-purple">
+                        <h3>Client-Centric Approach</h3>
+                        <p>Your success is our success. We prioritize clear communication, transparency, and collaboration to ensure we're always aligned with your vision and goals.</p>
+                    </div>
+                    <div class="value-card value-orange">
+                        <h3>Ethical Development</h3>
+                        <p>We're committed to building inclusive, accessible, and sustainable software. We consider the broader impact of our work on users, society, and the environment.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    </div>
+        <!-- Career Aspirations -->
+        <section class="section section-gray">
+            <div class="container">
+                <div class="section-icon-title">
+                    <svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polyline points="12 6 12 12 16 14"></polyline>
+                    </svg>
+                    <h2 class="section-title-left">Our Career Aspirations</h2>
+                </div>
 
-    <!-- FOOTER -->
-    <footer>
-        <p>© 2026 PixelWave Web Studio — Professional & Creative Web Designers</p>
+                <div class="aspirations-grid">
+                    <div class="aspiration-section">
+                        <h3 class="aspiration-name">Alex Chen</h3>
+                        <ul class="aspiration-list aspiration-blue">
+                            <li>Become a recognized thought leader in full-stack development and UX design</li>
+                            <li>Build and scale a successful software development agency</li>
+                            <li>Contribute to open-source projects that impact millions of developers</li>
+                            <li>Mentor the next generation of developers through workshops and speaking engagements</li>
+                        </ul>
+                    </div>
+                    <div class="aspiration-section">
+                        <h3 class="aspiration-name">Sarah Martinez</h3>
+                        <ul class="aspiration-list aspiration-green">
+                            <li>Specialize in distributed systems and cloud-native architectures</li>
+                            <li>Lead complex backend infrastructure projects for Fortune 500 companies</li>
+                            <li>Publish research on database optimization and system design patterns</li>
+                            <li>Create educational content to make backend development more accessible</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interests and Hobbies -->
+        <section class="section">
+            <div class="container">
+                <div class="section-icon-title">
+                    <svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
+                        <path d="m18 13-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
+                        <path d="M2 2l7.586 7.586"></path>
+                        <circle cx="11" cy="11" r="2"></circle>
+                    </svg>
+                    <h2 class="section-title-left">Our Interests and Hobbies</h2>
+                </div>
+
+                <div class="interests-container">
+                    <div class="interests-image">
+                        <img src="https://images.unsplash.com/photo-1649698145660-d30f91023b52?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzb2Z0d2FyZSUyMGRldmVsb3BtZW50JTIwY29kaW5nJTIwc2NyZWVufGVufDF8fHx8MTc3NDk0OTY2NXww&ixlib=rb-4.1.0&q=80&w=1080" alt="Coding workspace">
+                    </div>
+                    <div class="interests-content">
+                        <p class="interests-text">When we're not coding, we enjoy a variety of activities that keep us creative, inspired, and balanced. Our diverse interests help us bring fresh perspectives to our work.</p>
+                        <div class="hobbies-grid">
+                            <div class="hobby-tag">Open source contribution</div>
+                            <div class="hobby-tag">Tech conference speaking</div>
+                            <div class="hobby-tag">Photography</div>
+                            <div class="hobby-tag">Hiking</div>
+                            <div class="hobby-tag">Coffee brewing</div>
+                            <div class="hobby-tag">Board games</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Posts -->
+        <section class="section section-gray">
+            <div class="container">
+                <div class="section-icon-title">
+                    <svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                        <line x1="16" y1="2" x2="16" y2="6"></line>
+                        <line x1="8" y1="2" x2="8" y2="6"></line>
+                        <line x1="3" y1="10" x2="21" y2="10"></line>
+                    </svg>
+                    <h2 class="section-title-left">Our Blog Posts</h2>
+                </div>
+
+                <div class="blog-grid">
+                    <article class="blog-card">
+                        <div class="blog-category">Technology</div>
+                        <h3 class="blog-title">The Future of Web Development in 2026</h3>
+                        <p class="blog-excerpt">Exploring the latest trends in web development and what they mean for businesses.</p>
+                        <p class="blog-date">March 15, 2026</p>
+                    </article>
+                    <article class="blog-card">
+                        <div class="blog-category">Architecture</div>
+                        <h3 class="blog-title">Building Scalable Applications with Microservices</h3>
+                        <p class="blog-excerpt">A deep dive into microservices architecture and when to use it.</p>
+                        <p class="blog-date">February 28, 2026</p>
+                    </article>
+                    <article class="blog-card">
+                        <div class="blog-category">Best Practices</div>
+                        <h3 class="blog-title">The Art of Clean Code</h3>
+                        <p class="blog-excerpt">Best practices for writing maintainable and readable code that stands the test of time.</p>
+                        <p class="blog-date">February 10, 2026</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="section">
+            <div class="container">
+                <div class="section-icon-title">
+                    <svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                    <h2 class="section-title-left">Our Contact</h2>
+                </div>
+
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <h3 class="contact-heading">Get in Touch</h3>
+                        <p class="contact-description">We'd love to hear about your project and discuss how we can help bring your vision to life.</p>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                                <span>hello@codeduo.dev</span>
+                            </div>
+                            <div class="contact-item">
+                                <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                </svg>
+                                <span>+1 (555) 123-4567</span>
+                            </div>
+                            <div class="contact-item">
+                                <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                                <span>San Francisco, CA 94102</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form class="contact-form">
+                        <input type="text" placeholder="Your Name" class="form-input" required>
+                        <input type="email" placeholder="Your Email" class="form-input" required>
+                        <textarea placeholder="Your Message" rows="4" class="form-textarea" required></textarea>
+                        <button type="submit" class="form-submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="16 18 22 12 16 6"></polyline>
+                            <polyline points="8 6 2 12 8 18"></polyline>
+                        </svg>
+                        <span>CodeDuo</span>
+                    </div>
+                    <p class="footer-text">Two passionate programmers delivering exceptional digital solutions.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="profile.html">Profile</a></li>
+                        <li><a href="summary.html">Summary</a></li>
+                        <li><a href="showcase.html">Showcase</a></li>
+                        <li><a href="qualification.html">Qualification</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3 class="footer-title">Contact</h3>
+                    <ul class="footer-contact">
+                        <li>Email: hello@codeduo.dev</li>
+                        <li>Phone: +1 (555) 123-4567</li>
+                        <li>Location: San Francisco, CA</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 CodeDuo. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
 
-</main>
-
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,255 +1,326 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PixelWave Web Studio | Home</title>
-<link rel="stylesheet" href="css/main.css">
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PixelWave Web Studio | Home</title>
-    <link rel="stylesheet" href="css/main.css">
+    <title>CodeDuo - Expert Freelance Developers</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="nav-content">
+                <a href="index.html" class="logo">
+                    <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="16 18 22 12 16 6"></polyline>
+                        <polyline points="8 6 2 12 8 18"></polyline>
+                    </svg>
+                    <span>CodeDuo</span>
+                </a>
 
-	<main>
+                <!-- Desktop Navigation -->
+                <div class="desktop-nav">
+                    <a href="index.html" class="nav-link active">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        </svg>
+                        <span>Home</span>
+                    </a>
+                    <a href="profile.html" class="nav-link">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                        <span>Profile</span>
+                    </a>
+                    <a href="summary.html" class="nav-link">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                        </svg>
+                        <span>Summary</span>
+                    </a>
+                    <a href="showcase.html" class="nav-link">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                        </svg>
+                        <span>Showcase</span>
+                    </a>
+                    <a href="qualification.html" class="nav-link">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="8" r="7"></circle>
+                            <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                        </svg>
+                        <span>Qualification</span>
+                    </a>
+                </div>
 
-		<!-- HEADER -->
-		<header class="header active" data-header>
-			<div class="container">
-				<h1>
-					<a href="#" class="logo">PixelWave Web Studio</a>
-				</h1>
-				<nav class="navbar" data-navbar>
+                <!-- Mobile menu button -->
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <svg class="menu-icon" id="menuIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                    <svg class="close-icon hidden" id="closeIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
 
-					<ul class="navbar-list">
-						<li><a href="index.html"
-							class="navbar-link label-medium active"> Home</a></li>
-						<li><a href="profile.html" class="navbar-link label-medium">Profile</a></li>
-						<li><a href="summary.html" class="navbar-link label-medium">Summary</a></li>
-						<li><a href="showcase.html" class="navbar-link label-medium">Showcase</a></li>
-						<li><a href="qualifications.html"
-							class="navbar-link label-medium">Qualifications</a></li>
-					</ul>
-						
-						
-				</nav>
-				
-				<button class="nav-toggle-btn icon-btn" aria-label="toggle navbar" data-nav-toggler>
-					<span class="material-symbols-rounded open" aria-label="true">Menu</span>
-					<span class="material-symbols-rounded close" aria-label="ture">Close</span>
-				</button>
-
-			</div>
-		</header>
-
-		<!-- HERO -->
-		<section class="hero">
-			<h2>Modern, Responsive, Creative Web Design</h2>
-			<p>We help businesses grow with clean, fast, and professional
-				websites tailored to their goals.</p>
-			<a href="showcase.html">Explore Our Projects</a>
-		</section>
-
-		<!-- CONTENT AREA -->
-		<div class="content-area">
-
-			<!-- MAIN CONTENT -->
-			<section class="content">
-				<h2>About Us</h2>
-
-				<p>
-					<strong>PixelWave Web Studio</strong> is a collaborative freelance
-					partnership between two passionate Web designers who specialize in
-					crafting effective digital experiences. With combined strengths in
-					design, usability, and front‑end development, we build websites
-					that look great on every device—from mobile to desktop.
-				</p>
-
-				<!-- TEAM PHOTO -->
-				<div class="team-photo">
-					<img src="images/team-photo.jpg" alt="Our Team Photo">
-					<p class="caption">Tatiana & Partner — Creative Freelance Web
-						Designers</p>
-				</div>
-
-				<h3>Meet the Designers</h3>
-
-				<div class="partners">
-
-					<!-- Partner 1 -->
-					<div class="partner-card">
-						<img src="images/partner1.jpg" alt="Tatiana Photo">
-						<h4>Tatiana Muniz Rodriguez</h4>
-						<p>Tatiana is a front‑end designer focused on UI/UX and
-							responsive web development. She combines modern layout
-							techniques, creative problem‑solving, and a strong sense of
-							visual balance to deliver highly polished user experiences.</p>
-						<a class="profile-btn" href="portfolio-tatiana/index.html">Visit
-							Tatiana’s Portfolio</a>
-					</div>
-
-					<!-- Partner 2 -->
-					<div class="partner-card">
-						<img src="images/partner2.jpg" alt="Partner Photo">
-						<h4>Partner Name</h4>
-						<p>Skilled in layout frameworks, animation, and branding,
-							Partner brings creative strategy and strong technical expertise
-							to every project. They help clients shape their digital identity
-							with clarity and confidence.</p>
-						<a class="profile-btn" href="portfolio-partner/index.html">Visit
-							Partner’s Portfolio</a>
-					</div>
-
-				</div>
-
-				<h3>What We Do</h3>
-				<p>We specialize in:</p>
-
-				<ul class="services-list">
-					<li>Responsive multi‑page websites</li>
-					<li>Business landing pages</li>
-					<li>UI/UX design and prototyping</li>
-					<li>Portfolio websites for creators and professionals</li>
-					<li>Brand‑aligned visual design</li>
-				</ul>
-
-				<p>Every project we build is designed with a mobile‑first
-					approach, ensuring accessibility, speed, and seamless viewing
-					across all devices.</p>
-			</section>
-
-			<!-- SIDEBAR -->
-			<aside>
-				<h3>Quick Links</h3>
-				<ul>
-					<li><a href="showcase.html">Our Portfolio</a></li>
-					<li><a href="profile.html">Our Values</a></li>
-					<li><a href="qualifications.html">Experience & Skills</a></li>
-					<li><a href="summary.html">Goals & Future Plans</a></li>
-				</ul>
-
-				<h3>Contact Us</h3>
-				<p>
-					Email: <strong>info@pixelwave.com</strong>
-				</p>
-				<p>Available for freelance projects worldwide.</p>
-			</aside>
-
-		</div>
-
-		<!-- FOOTER -->
-		<footer>
-			<p>© 2026 PixelWave Web Studio — Crafted with care and
-				creativity.</p>
-		</footer>
-
-	</main>
-<main>
-
-    <!-- HEADER -->
-    <header>
-        <h1>PixelWave Web Studio</h1>
-        <nav>
-            index.html
-            profile.html>Profile</a>
-            summary.htmlSummary</a>
-            showcase.html
-            qualifications.htmlQualifications</a>
+            <!-- Mobile Navigation -->
+            <div class="mobile-nav hidden" id="mobileNav">
+                <a href="index.html" class="mobile-nav-link active">
+                    <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                    </svg>
+                    <span>Home</span>
+                </a>
+                <a href="profile.html" class="mobile-nav-link">
+                    <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                    <span>Profile</span>
+                </a>
+                <a href="summary.html" class="mobile-nav-link">
+                    <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                        <polyline points="14 2 14 8 20 8"></polyline>
+                    </svg>
+                    <span>Summary</span>
+                </a>
+                <a href="showcase.html" class="mobile-nav-link">
+                    <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                        <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                    </svg>
+                    <span>Showcase</span>
+                </a>
+                <a href="qualification.html" class="mobile-nav-link">
+                    <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="8" r="7"></circle>
+                        <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                    </svg>
+                    <span>Qualification</span>
+                </a>
+            </div>
         </nav>
     </header>
 
-    <!-- HERO -->
-    <section class="hero">
-        <h2>Modern, Responsive, Creative Web Design</h2>
-        <p>We help businesses grow with clean, fast, and professional websites tailored to their goals.</p>
-        showcase.html>Explore Our Projects</a>
-    </section>
-
-    <!-- CONTENT AREA -->
-    <div class="content-area">
-
-        <!-- MAIN CONTENT -->
-        <section class="content">
-            <h2>About Us</h2>
-
-            <p><strong>PixelWave Web Studio</strong> is a collaborative freelance partnership between two passionate Web designers who specialize in crafting effective digital experiences. With combined strengths in design, usability, and front‑end development, we build websites that look great on every device—from mobile to desktop.</p>
-
-            <!-- TEAM PHOTO -->
-            <div class="team-photo">
-                <img src="images/team-photo.jpg" alt="Our Team Photo">
-                <p class="caption">Tatiana & Partner — Creative Freelance Web Designers</p>
-            </div>
-
-            <h3>Meet the Designers</h3>
-
-            <div class="partners">
-
-                <!-- Partner 1 -->
-                <div class="partner-card">
-                    <img src="images/partner1.jpg" alt="Tatiana Photo">
-                    <h4>Tatiana Muniz Rodriguez</h4>
-                    <p>Tatiana is a front‑end designer focused on UI/UX and responsive web development. She combines modern layout techniques, creative problem‑solving, and a strong sense of visual balance to deliver highly polished user experiences.</p>
-                    <a class="profile-btn" href="portfolio-tatiana/index.html">Visit Tatiana’s Portfolio</a>
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-grid">
+                    <div class="hero-content">
+                        <h1 class="hero-title">Expert Freelance Development Solutions</h1>
+                        <p class="hero-text">
+                            Two passionate developers combining creativity and technical excellence to
+                            bring your digital vision to life.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="showcase.html" class="btn btn-primary">
+                                View Our Work
+                                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </a>
+                            <a href="profile.html" class="btn btn-secondary">Get in Touch</a>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <img src="https://images.unsplash.com/photo-1616344787254-d4575aa102ae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBwcm9ncmFtbWVycyUyMHRlYW0lMjB3b3Jrc3BhY2V8ZW58MXx8fHwxNzc0OTUzMDg0fDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Professional programming workspace">
+                    </div>
                 </div>
-
-                <!-- Partner 2 -->
-                <div class="partner-card">
-                    <img src="images/partner2.jpg" alt="Partner Photo">
-                    <h4>Partner Name</h4>
-                    <p>Skilled in layout frameworks, animation, and branding, Partner brings creative strategy and strong technical expertise to every project. They help clients shape their digital identity with clarity and confidence.</p>
-                    <a class="profile-btn" href="portfolio-partner/index.html">Visit Partner’s Portfolio</a>
-                </div>
-
             </div>
-
-            <h3>What We Do</h3>
-            <p>We specialize in:</p>
-
-            <ul class="services-list">
-                <li>Responsive multi‑page websites</li>
-                <li>Business landing pages</li>
-                <li>UI/UX design and prototyping</li>
-                <li>Portfolio websites for creators and professionals</li>
-                <li>Brand‑aligned visual design</li>
-            </ul>
-
-            <p>Every project we build is designed with a mobile‑first approach, ensuring accessibility, speed, and seamless viewing across all devices.</p>
         </section>
 
-        <!-- SIDEBAR -->
-        <aside>
-            <h3>Title Here</h3>
-            <ul>
-                <li><a href="showcase.html">Our Portfolio</a></li>
-                <li><a href="profile.html">Our Values</a></li>
-                <li><a href="qualifications.html">Experience & Skills</a></li>
-                <li><a href="summary.html">Goals & Future Plans</a></li>
-            </ul>
-            
-            <div>
-            	<h3>Portfolios</h3>
-            	<ul>
-            		<li><a href="portfolio-diogo/index.html">Diogo</a></li>
-            		<li><a href="portfolio-tatiana/index.html">Tatiana</a></li>
-            	</ul>
+        <!-- About Us Section -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Meet the CodeDuo Team</h2>
+                    <p class="section-subtitle">
+                        We're a dynamic duo of experienced developers committed to delivering
+                        high-quality, innovative solutions for our clients.
+                    </p>
+                </div>
+
+                <div class="partners-grid">
+                    <!-- Partner 1 -->
+                    <div class="partner-card">
+                        <div class="partner-image">
+                            <img src="https://images.unsplash.com/photo-1755140208191-ec5def51708d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtYWxlJTIwcHJvZ3JhbW1lciUyMHBvcnRyYWl0JTIwcHJvZmVzc2lvbmFsfGVufDF8fHx8MTc3NDk1MzA4Nnww&ixlib=rb-4.1.0&q=80&w=1080" alt="Alex Chen">
+                        </div>
+                        <div class="partner-content">
+                            <h3 class="partner-name">Alex Chen</h3>
+                            <p class="partner-role">Full-Stack Developer & UX Specialist</p>
+                            <p class="partner-description">
+                                With 8+ years of experience in full-stack development, Alex specializes in building scalable web applications and creating intuitive user experiences. Expert in React, Node.js, and cloud architecture.
+                            </p>
+                            <div class="specialties">
+                                <p class="specialties-label">Specialties:</p>
+                                <div class="specialty-tags">
+                                    <span class="tag">React & Next.js</span>
+                                    <span class="tag">Node.js & Express</span>
+                                    <span class="tag">AWS & DevOps</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Partner 2 -->
+                    <div class="partner-card">
+                        <div class="partner-image">
+                            <img src="https://images.unsplash.com/photo-1681887001651-a15c749c1ab0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmZW1hbGUlMjBwcm9ncmFtbWVyJTIwcG9ydHJhaXQlMjBwcm9mZXNzaW9uYWx8ZW58MXx8fHwxNzc0OTUzMDg2fDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Sarah Martinez">
+                        </div>
+                        <div class="partner-content">
+                            <h3 class="partner-name">Sarah Martinez</h3>
+                            <p class="partner-role">Backend Engineer & Data Architect</p>
+                            <p class="partner-description">
+                                Sarah brings 7+ years of expertise in backend systems and database architecture. She excels at designing robust APIs and optimizing data workflows for high-performance applications.
+                            </p>
+                            <div class="specialties">
+                                <p class="specialties-label">Specialties:</p>
+                                <div class="specialty-tags">
+                                    <span class="tag">Python & Django</span>
+                                    <span class="tag">PostgreSQL & MongoDB</span>
+                                    <span class="tag">System Design</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section class="section section-gray">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Why Work With Us</h2>
+                    <p class="section-subtitle">
+                        We combine technical expertise with creative problem-solving to deliver
+                        exceptional results.
+                    </p>
+                </div>
+
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon feature-icon-blue">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="16 18 22 12 16 6"></polyline>
+                                <polyline points="8 6 2 12 8 18"></polyline>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Technical Excellence</h3>
+                        <p class="feature-text">
+                            15+ years of combined experience in cutting-edge technologies and best
+                            practices.
+                        </p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon feature-icon-green">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Collaborative Approach</h3>
+                        <p class="feature-text">
+                            We work closely with clients to understand their vision and deliver
+                            solutions that exceed expectations.
+                        </p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon feature-icon-purple">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2v20M2 12h20"></path>
+                                <path d="m19 6-7 7-7-7"></path>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Fast & Reliable</h3>
+                        <p class="feature-text">
+                            Timely delivery and ongoing support to ensure your project's success
+                            from start to finish.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container cta-container">
+                <h2 class="cta-title">Ready to Start Your Project?</h2>
+                <p class="cta-text">
+                    Let's discuss how we can help bring your ideas to life.
+                </p>
+                <a href="profile.html" class="btn btn-white">
+                    Contact Us Today
+                    <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="16 18 22 12 16 6"></polyline>
+                            <polyline points="8 6 2 12 8 18"></polyline>
+                        </svg>
+                        <span>CodeDuo</span>
+                    </div>
+                    <p class="footer-text">
+                        Two passionate programmers delivering exceptional digital solutions.
+                    </p>
+                </div>
+
+                <div class="footer-section">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="profile.html">Profile</a></li>
+                        <li><a href="summary.html">Summary</a></li>
+                        <li><a href="showcase.html">Showcase</a></li>
+                        <li><a href="qualification.html">Qualification</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3 class="footer-title">Contact</h3>
+                    <ul class="footer-contact">
+                        <li>Email: hello@codeduo.dev</li>
+                        <li>Phone: +1 (555) 123-4567</li>
+                        <li>Location: San Francisco, CA</li>
+                    </ul>
+                </div>
             </div>
 
-            <h3>Contact Us</h3>
-            <p>Email: <strong>info@pixelwave.com</strong></p>
-            <p>Available for freelance projects worldwide.</p>
-        </aside>
-
-    </div>
-
-    <!-- FOOTER -->
-    <footer>
-        <p>© 2026 PixelWave Web Studio — Crafted with care and creativity.</p>
+            <div class="footer-bottom">
+                <p>&copy; 2026 CodeDuo. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
 
-</main>
-
+    <script src="script.js"></script>
 </body>
 </html>

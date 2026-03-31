@@ -3,44 +3,444 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Business Website</title>
-    <link rel="stylesheet" href="css/main.css">
+    <title>Showcase - CodeDuo</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-<main>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="nav-content">
+                <a href="index.html" class="logo">
+                    <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="16 18 22 12 16 6"></polyline>
+                        <polyline points="8 6 2 12 8 18"></polyline>
+                    </svg>
+                    <span>CodeDuo</span>
+                </a>
 
-    <header>
-        <h1>Your Business Name</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="profile.html">Profile</a>
-            <a href="summary.html">Summary</a>
-            <a href="showcase.html">Showcase</a>
-            <a href="qualifications.html">Qualifications</a>
+                <div class="desktop-nav">
+                    <a href="index.html" class="nav-link">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        </svg>
+                        <span>Home</span>
+                    </a>
+                    <a href="profile.html" class="nav-link">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                        <span>Profile</span>
+                    </a>
+                    <a href="summary.html" class="nav-link">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                        </svg>
+                        <span>Summary</span>
+                    </a>
+                    <a href="showcase.html" class="nav-link active">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                        </svg>
+                        <span>Showcase</span>
+                    </a>
+                    <a href="qualification.html" class="nav-link">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="8" r="7"></circle>
+                            <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                        </svg>
+                        <span>Qualification</span>
+                    </a>
+                </div>
+
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <svg class="menu-icon" id="menuIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                    <svg class="close-icon hidden" id="closeIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="mobile-nav hidden" id="mobileNav">
+                <a href="index.html" class="mobile-nav-link">
+                    <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                    </svg>
+                    <span>Home</span>
+                </a>
+                <a href="profile.html" class="mobile-nav-link">
+                    <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                    <span>Profile</span>
+                </a>
+                <a href="summary.html" class="mobile-nav-link">
+                    <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                        <polyline points="14 2 14 8 20 8"></polyline>
+                    </svg>
+                    <span>Summary</span>
+                </a>
+                <a href="showcase.html" class="mobile-nav-link active">
+                    <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                        <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                    </svg>
+                    <span>Showcase</span>
+                </a>
+                <a href="qualification.html" class="mobile-nav-link">
+                    <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="8" r="7"></circle>
+                        <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                    </svg>
+                    <span>Qualification</span>
+                </a>
+            </div>
         </nav>
     </header>
 
-    <section class="hero">
-        <h2>Welcome to Our Freelance Web Design Studio</h2>
-    </section>
-
-    <div class="content-area">
-        <section class="content">
-            <h2>Page Title</h2>
-            <p>Content goes here.</p>
+    <!-- Main Content -->
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title">Our Showcase</h1>
+                <p class="page-subtitle">Explore our portfolio, accomplishments, and service offerings</p>
+            </div>
         </section>
 
-        <aside>
-            <h3>Sidebar</h3>
-            <p>Links, notes, or profile photos.</p>
-        </aside>
-    </div>
+        <!-- Portfolio Projects -->
+        <section class="section">
+            <div class="container">
+                <div class="section-icon-title">
+                    <svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                        <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                    </svg>
+                    <h2 class="section-title-left">Our Portfolio Projects</h2>
+                </div>
 
-    <footer>
-        <p>© 2026 Your Business Name — All Rights Reserved.</p>
+                <p class="goal-intro">Here are some of our most impactful projects that showcase our technical expertise and problem-solving abilities.</p>
+
+                <div class="portfolio-container">
+                    <!-- Project 1 -->
+                    <div class="portfolio-item">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1772272935464-2e90d8218987?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3ZWIlMjBkZXZlbG9wbWVudCUyMHBvcnRmb2xpb3xlbnwxfHx8fDE3NzQ5NTMwODV8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="E-Commerce Platform">
+                        </div>
+                        <div class="portfolio-content">
+                            <p class="portfolio-client">TechStyle Fashion</p>
+                            <h3 class="portfolio-title">E-Commerce Platform Redesign</h3>
+                            <p class="portfolio-description">Complete redesign and rebuild of a high-traffic e-commerce platform serving 100K+ daily users. Improved page load times by 60% and increased conversion rates by 35%.</p>
+                            <div class="tech-tags">
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>PostgreSQL</span>
+                                <span>AWS</span>
+                            </div>
+                            <ul class="results-list">
+                                <li>✓ 60% faster load times</li>
+                                <li>✓ 35% conversion increase</li>
+                                <li>✓ 100K+ daily users</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="portfolio-item portfolio-reverse">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1752859951149-7d3fc700a7ec?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjB0ZWNoJTIwc3RhcnR1cCUyMG9mZmljZXxlbnwxfHx8fDE3NzQ5MTk4OTl8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Healthcare System">
+                        </div>
+                        <div class="portfolio-content">
+                            <p class="portfolio-client">MediCare Solutions</p>
+                            <h3 class="portfolio-title">Healthcare Management System</h3>
+                            <p class="portfolio-description">Built a comprehensive patient management system with appointment scheduling, telemedicine capabilities, and secure medical records storage.</p>
+                            <div class="tech-tags">
+                                <span>Next.js</span>
+                                <span>Python</span>
+                                <span>MongoDB</span>
+                                <span>Docker</span>
+                            </div>
+                            <ul class="results-list">
+                                <li>✓ 5,000+ patients managed</li>
+                                <li>✓ HIPAA compliant</li>
+                                <li>✓ 99.9% uptime</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="portfolio-item">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1649698145660-d30f91023b52?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzb2Z0d2FyZSUyMGRldmVsb3BtZW50JTIwY29kaW5nJTIwc2NyZWVufGVufDF8fHx8MTc3NDk0OTY2NXww&ixlib=rb-4.1.0&q=80&w=1080" alt="Analytics Dashboard">
+                        </div>
+                        <div class="portfolio-content">
+                            <p class="portfolio-client">DataFlow Analytics</p>
+                            <h3 class="portfolio-title">Real-Time Analytics Dashboard</h3>
+                            <p class="portfolio-description">Developed a real-time data visualization platform processing millions of events per day with customizable dashboards and alerting systems.</p>
+                            <div class="tech-tags">
+                                <span>React</span>
+                                <span>D3.js</span>
+                                <span>Kafka</span>
+                                <span>TimescaleDB</span>
+                            </div>
+                            <ul class="results-list">
+                                <li>✓ 1M+ events/day</li>
+                                <li>✓ Sub-second latency</li>
+                                <li>✓ Real-time insights</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="portfolio-item portfolio-reverse">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1616344787254-d4575aa102ae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBwcm9ncmFtbWVycyUyMHRlYW0lMjB3b3Jrc3BhY2V8ZW58MXx8fHwxNzc0OTUzMDg0fDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Mobile Banking">
+                        </div>
+                        <div class="portfolio-content">
+                            <p class="portfolio-client">FinTech Innovations</p>
+                            <h3 class="portfolio-title">Mobile Banking Application</h3>
+                            <p class="portfolio-description">Created a secure mobile banking app with biometric authentication, instant transfers, and AI-powered spending insights.</p>
+                            <div class="tech-tags">
+                                <span>React Native</span>
+                                <span>Node.js</span>
+                                <span>Redis</span>
+                                <span>Stripe</span>
+                            </div>
+                            <ul class="results-list">
+                                <li>✓ 50K+ downloads</li>
+                                <li>✓ 4.8 star rating</li>
+                                <li>✓ Bank-grade security</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Accomplishments -->
+        <section class="section section-gray">
+            <div class="container">
+                <div class="section-icon-title">
+                    <svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="8" r="7"></circle>
+                        <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                    </svg>
+                    <h2 class="section-title-left">Our Accomplishments</h2>
+                </div>
+
+                <div class="accomplishments-grid">
+                    <div class="accomplishment-card">
+                        <div class="accomplishment-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                            </svg>
+                        </div>
+                        <h3>50+ Successful Projects</h3>
+                        <p>Delivered across various industries and scales</p>
+                    </div>
+
+                    <div class="accomplishment-card">
+                        <div class="accomplishment-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                            </svg>
+                        </div>
+                        <h3>98% Client Retention</h3>
+                        <p>Long-term partnerships built on trust and quality</p>
+                    </div>
+
+                    <div class="accomplishment-card">
+                        <div class="accomplishment-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="8" r="7"></circle>
+                                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                            </svg>
+                        </div>
+                        <h3>$2M+ Revenue Generated</h3>
+                        <p>For clients through our solutions and optimizations</p>
+                    </div>
+
+                    <div class="accomplishment-card">
+                        <div class="accomplishment-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="16.5" y1="9.4" x2="7.5" y2="4.21"></line>
+                                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                            </svg>
+                        </div>
+                        <h3>15+ Technologies Mastered</h3>
+                        <p>Cutting-edge tools and frameworks</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Business Offers -->
+        <section class="section">
+            <div class="container">
+                <div class="section-icon-title">
+                    <svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="16.5" y1="9.4" x2="7.5" y2="4.21"></line>
+                        <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                    </svg>
+                    <h2 class="section-title-left">Our Business Offers</h2>
+                </div>
+
+                <p class="goal-intro">Comprehensive development services tailored to your needs. All packages include project management, testing, and documentation.</p>
+
+                <div class="offers-grid">
+                    <!-- Offer 1 -->
+                    <div class="offer-card">
+                        <h3>Full-Stack Web Development</h3>
+                        <p class="offer-price">Starting at $5,000</p>
+                        <p class="offer-description">End-to-end web application development from concept to deployment, including frontend, backend, and database design.</p>
+                        <ul class="offer-features">
+                            <li>✓ Custom web applications</li>
+                            <li>✓ Responsive design</li>
+                            <li>✓ API development</li>
+                            <li>✓ Database architecture</li>
+                            <li>✓ Cloud deployment</li>
+                        </ul>
+                        <button class="offer-button">Get Started</button>
+                    </div>
+
+                    <!-- Offer 2 -->
+                    <div class="offer-card">
+                        <h3>Mobile App Development</h3>
+                        <p class="offer-price">Starting at $8,000</p>
+                        <p class="offer-description">Native and cross-platform mobile applications for iOS and Android with seamless user experiences.</p>
+                        <ul class="offer-features">
+                            <li>✓ iOS & Android apps</li>
+                            <li>✓ Cross-platform solutions</li>
+                            <li>✓ App Store deployment</li>
+                            <li>✓ Push notifications</li>
+                            <li>✓ Offline functionality</li>
+                        </ul>
+                        <button class="offer-button">Get Started</button>
+                    </div>
+
+                    <!-- Offer 3 -->
+                    <div class="offer-card">
+                        <h3>UI/UX Design & Consulting</h3>
+                        <p class="offer-price">Starting at $3,000</p>
+                        <p class="offer-description">User-centered design services including wireframing, prototyping, and user research to create intuitive interfaces.</p>
+                        <ul class="offer-features">
+                            <li>✓ User research</li>
+                            <li>✓ Wireframing & prototyping</li>
+                            <li>✓ Design systems</li>
+                            <li>✓ Usability testing</li>
+                            <li>✓ Brand consistency</li>
+                        </ul>
+                        <button class="offer-button">Get Started</button>
+                    </div>
+
+                    <!-- Offer 4 -->
+                    <div class="offer-card">
+                        <h3>DevOps & Cloud Infrastructure</h3>
+                        <p class="offer-price">Starting at $4,000</p>
+                        <p class="offer-description">Cloud migration, CI/CD pipeline setup, and infrastructure optimization for scalable and reliable systems.</p>
+                        <ul class="offer-features">
+                            <li>✓ Cloud migration</li>
+                            <li>✓ CI/CD pipelines</li>
+                            <li>✓ Infrastructure as code</li>
+                            <li>✓ Monitoring & alerts</li>
+                            <li>✓ Security hardening</li>
+                        </ul>
+                        <button class="offer-button">Get Started</button>
+                    </div>
+
+                    <!-- Offer 5 -->
+                    <div class="offer-card">
+                        <h3>Code Review & Consultation</h3>
+                        <p class="offer-price">Starting at $1,500</p>
+                        <p class="offer-description">Expert code reviews, architecture assessments, and technical consulting to improve your existing projects.</p>
+                        <ul class="offer-features">
+                            <li>✓ Code quality audit</li>
+                            <li>✓ Architecture review</li>
+                            <li>✓ Performance optimization</li>
+                            <li>✓ Security assessment</li>
+                            <li>✓ Best practices guidance</li>
+                        </ul>
+                        <button class="offer-button">Get Started</button>
+                    </div>
+
+                    <!-- Offer 6 -->
+                    <div class="offer-card">
+                        <h3>Maintenance & Support</h3>
+                        <p class="offer-price">Starting at $2,000/month</p>
+                        <p class="offer-description">Ongoing maintenance, bug fixes, and feature updates to keep your applications running smoothly.</p>
+                        <ul class="offer-features">
+                            <li>✓ 24/7 monitoring</li>
+                            <li>✓ Bug fixes</li>
+                            <li>✓ Security updates</li>
+                            <li>✓ Performance tuning</li>
+                            <li>✓ Feature enhancements</li>
+                        </ul>
+                        <button class="offer-button">Get Started</button>
+                    </div>
+                </div>
+
+                <div class="custom-offer-box">
+                    <h3>Custom Solutions</h3>
+                    <p>Don't see what you're looking for? We also offer custom packages tailored to your specific requirements and budget.</p>
+                    <button class="custom-offer-button">Contact Us for Custom Quote</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="16 18 22 12 16 6"></polyline>
+                            <polyline points="8 6 2 12 8 18"></polyline>
+                        </svg>
+                        <span>CodeDuo</span>
+                    </div>
+                    <p class="footer-text">Two passionate programmers delivering exceptional digital solutions.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="profile.html">Profile</a></li>
+                        <li><a href="summary.html">Summary</a></li>
+                        <li><a href="showcase.html">Showcase</a></li>
+                        <li><a href="qualification.html">Qualification</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3 class="footer-title">Contact</h3>
+                    <ul class="footer-contact">
+                        <li>Email: hello@codeduo.dev</li>
+                        <li>Phone: +1 (555) 123-4567</li>
+                        <li>Location: San Francisco, CA</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 CodeDuo. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
 
-</main>
+    <script src="script.js"></script>
 </body>
 </html>
