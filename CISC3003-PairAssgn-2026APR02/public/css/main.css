@@ -146,6 +146,42 @@ aside {
     padding: 20px;
     border-radius: 8px;
     color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.profile-btn:hover {
+    background: #0d8bd6;
+}
+
+/* ================= SIDEBAR ================= */
+aside {
+    background: white;
+    color: #222021;
+    padding: 25px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    opacity: 0.5;
+}
+
+aside ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+aside ul li {
+	background-color: rgb(130, 130, 130, 0.5);
+	padding: 18px 8px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+aside ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
 }
 
 aside ul {
