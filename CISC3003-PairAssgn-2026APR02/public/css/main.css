@@ -1,0 +1,81 @@
+/* ========== Global Reset ========== */
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-align: center;
+}
+
+/* Hero */
+.hero {
+    background: #e63946;
+    padding: 60px 20px;
+    color: white;
+    text-align: center;
+}
+
+/* Content + Sidebar (mobile stacked) */
+.content-area {
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    background: #2ecc71;
+    padding: 20px;
+}
+
+aside {
+    background: #8e44ad;
+    padding: 20px;
+    color: white;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* ========== Tablet Layout (min-width: 768px) ========== */
+@media (min-width: 768px) {
+    .content-area {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .content {
+        flex: 2;
+    }
+
+    aside {
+        flex: 1;
+    }
+}
+
+/* ========== Desktop Layout (min-width: 1024px) ========== */
+@media (min-width: 1024px) {
+    .hero {
+        max-width: 900px;
+        margin: auto;
+    }
+
+    .content-area {
+        max-width: 1200px;
+        margin: auto;
+    }
+}
+
+/* ========== Layout Containers ========== */
+
+main {
+    width: 100%;
+}
+
+/* Header */
+header {
+    background: #1fa3ff;
+    padding: 20px;
+}

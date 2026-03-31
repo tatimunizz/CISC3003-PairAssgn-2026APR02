@@ -1,0 +1,127 @@
+/* ========== GLOBAL RESET ========== */
+header {
+    background: #1fa3ff;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 12px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* ========== HERO ========== */
+.hero {
+    background: #e63946;
+    padding: 50px 20px;
+    color: white;
+    text-align: center;
+}
+
+/* ========== CONTENT + SIDEBAR ========== */
+.content-area {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.content {
+    background: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.content h2 {
+    margin-top: 20px;
+}
+
+.content ul {
+    margin: 10px 0 20px;
+    padding-left: 20px;
+}
+
+.blog-list li {
+    margin-bottom: 8px;
+}
+
+/* Contact box */
+.contact-box {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+/* ========== SIDEBAR ========== */
+aside {
+    background: #8e44ad;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+aside ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+aside ul li {
+    margin-bottom: 12px;
+}
+
+aside a {
+    color: #ffe6ff;
+    text-decoration: underline;
+}
+
+/* ========== FOOTER ========== */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* ========== TABLET ========== */
+@media (min-width: 768px) {
+    .content-area {
+        flex-direction: row;
+    }
+
+    .content {
+        flex: 2;
+    }
+
+    aside {
+        flex: 1;
+    }
+}
+
+/* ========== DESKTOP ========== */
+@media (min-width: 1024px) {
+    .content-area {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .hero {
+        max-width: 900px;
+        margin: auto;
+    }
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
