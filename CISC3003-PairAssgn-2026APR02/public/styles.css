@@ -152,7 +152,8 @@ body {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(to bottom right, #2563eb, #1e40af);
+    /* background: linear-gradient(to bottom right, #2563eb, #1e40af); */
+    background-image: url('images/hero-bg.jpg');
     color: white;
     padding: 6rem 0;
 }
@@ -333,22 +334,25 @@ body {
 
 .partner-content {
     padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 .partner-name {
     font-size: 1.5rem;
     color: #1e293b;
-    margin-bottom: 0.5rem;
+    /*margin-bottom: 0.5rem;*/
 }
 
 .partner-role {
     color: #2563eb;
-    margin-bottom: 1rem;
+    /*margin-bottom: 1rem;*/
 }
 
 .partner-description {
     color: #64748b;
-    margin-bottom: 1.5rem;
+    /*margin-bottom: 1.5rem;*/
 }
 
 .specialties-label {
