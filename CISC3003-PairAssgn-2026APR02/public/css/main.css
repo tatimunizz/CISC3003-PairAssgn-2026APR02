@@ -1,37 +1,138 @@
-/* ========== Global Reset ========== */
-* {
-    margin: 0;
+/* ================= Global Reset ================= */    
+* {	
+	margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+body {
+	background-color: #add8e6;
+}
+
+/* ================= HEADER ================= */
+header {
+    background: #1fa3ff;
+    padding: 20px;
     color: white;
     text-align: center;
 }
 
-/* Hero */
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* ================= HERO ================= */
 .hero {
     background: #e63946;
-    padding: 60px 20px;
     color: white;
     text-align: center;
+    padding: 60px 20px;
 }
 
-/* Content + Sidebar (mobile stacked) */
+.cta-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 24px;
+    background: white;
+    color: #e63946;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.cta-btn:hover {
+    background: #ffeded;
+}
+
+/* ================= CONTENT AREA ================= */
 .content-area {
     display: flex;
     flex-direction: column;
+    padding: 20px;
+    gap: 20px;
 }
 
+/* Main Content styling */
 .content {
     background: #2ecc71;
     padding: 20px;
+    border-radius: 8px;
 }
 
-aside {
-    background: #8e44ad;
-    padding: 20px;
+/* Partner cards */
+.partners {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.partner-card {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.partner-card img {
+    width: 100%;
+    max-width: 220px;
+    border-radius: 8px;
+}
+
+.profile-btn {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 8px 16px;
+    background: #1fa3ff;
     color: white;
+    text-decoration: none;
+    border-radius: 5px;
 }
 
-/* Footer */
+.profile-btn:hover {
+    background: #0d8bd6;
+}
+
+/* ================= SIDEBAR ================= */
+aside {
+    background: white;
+    color: #222021;
+    padding: 25px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    opacity: 0.5;
+}
+
+aside ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+aside ul li {
+	background-color: rgb(130, 130, 130, 0.5);
+	padding: 18px 8px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+aside ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* ================= FOOTER ================= */
 footer {
     background: #333;
     color: white;
@@ -39,11 +140,20 @@ footer {
     text-align: center;
 }
 
-/* ========== Tablet Layout (min-width: 768px) ========== */
+/* ================= TABLET LAYOUT ================= */
 @media (min-width: 768px) {
+
+    .partners {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .partner-card {
+        width: 48%;
+    }
+
     .content-area {
         flex-direction: row;
-        gap: 20px;
     }
 
     .content {
@@ -55,7 +165,7 @@ footer {
     }
 }
 
-/* ========== Desktop Layout (min-width: 1024px) ========== */
+/* ================= DESKTOP LAYOUT ================= */
 @media (min-width: 1024px) {
     .hero {
         max-width: 900px;
@@ -66,16 +176,4 @@ footer {
         max-width: 1200px;
         margin: auto;
     }
-}
-
-/* ========== Layout Containers ========== */
-
-main {
-    width: 100%;
-}
-
-/* Header */
-header {
-    background: #1fa3ff;
-    padding: 20px;
 }
