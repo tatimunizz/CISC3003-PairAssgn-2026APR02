@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qualification - CodeDuo</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="nav-content">
+                <a href="index.html" class="logo">
+                    <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="16 18 22 12 16 6"></polyline>
+                        <polyline points="8 6 2 12 8 18"></polyline>
+                    </svg>
+                    <span>CodeDuo</span>
+                </a>
+
+                <div class="desktop-nav">
+                    <a href="index.html" class="nav-link">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        </svg>
+                        <span>Home</span>
+                    </a>
+                    <a href="profile.html" class="nav-link">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                        <span>Profile</span>
+                    </a>
+                    <a href="summary.html" class="nav-link">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                        </svg>
+                        <span>Summary</span>
+                    </a>
+                    <a href="showcase.html" class="nav-link">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                        </svg>
+                        <span>Showcase</span>
+                    </a>
+                    <a href="qualification.html" class="nav-link active">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="8" r="7"></circle>
+                            <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                        </svg>
+                        <span>Qualification</span>
+                    </a>
+                </div>
+
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <svg class="menu-icon" id="menuIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                    <svg class="close-icon hidden" id="closeIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="mobile-nav hidden" id="mobileNav">
+                <a href="index.html" class="mobile-nav-link">
+                    <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                    </svg>
+                    <span>Home</span>
+                </a>
+                <a href="profile.html" class="mobile-nav-link">
+                    <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                    <span>Profile</span>
+                </a>
+                <a href="summary.html" class="mobile-nav-link">
+                    <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                        <polyline points="14 2 14 8 20 8"></polyline>
+                    </svg>
+                    <span>Summary</span>
+                </a>
+                <a href="showcase.html" class="mobile-nav-link">
+                    <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                        <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                    </svg>
+                    <span>Showcase</span>
+                </a>
+                <a href="qualification.html" class="mobile-nav-link active">
+                    <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="8" r="7"></circle>
+                        <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                    </svg>
+                    <span>Qualification</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title">Our Qualifications</h1>
+                <p class="page-subtitle">Our journey, experience, recognition, and comprehensive services</p>
+            </div>
+        </section>
+
+        <!-- History Section -->
+        <section class="section">
+            <div class="container">
+                <div class="section-icon-title">
+                    <svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                        <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                    </svg>
+                    <h2 class="section-title-left">Our History</h2>
+                </div>
+
+                <p class="goal-intro">From our founding to today, we've consistently grown and evolved while staying true to our commitment to excellence.</p>
+
+                <div class="timeline-container">
+                    <div class="timeline-line"></div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>Formation of CodeDuo</h3>
+                                <span class="timeline-year">2018</span>
+                            </div>
+                            <p>Alex and Sarah joined forces after meeting at a tech conference, recognizing their complementary skills and shared vision for delivering exceptional freelance development services.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>First Major Client</h3>
+                                <span class="timeline-year">2019</span>
+                            </div>
+                            <p>Landed our first Fortune 500 client, delivering a complex e-commerce platform that exceeded expectations and established our reputation for quality.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>Remote-First Evolution</h3>
+                                <span class="timeline-year">2020</span>
+                            </div>
+                            <p>Adapted to fully remote operations, expanding our client base nationwide while maintaining exceptional service quality and communication.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>Specialization & Growth</h3>
+                                <span class="timeline-year">2021</span>
+                            </div>
+                            <p>Deepened expertise in cloud architecture and modern frameworks, growing our portfolio to 20+ successful projects across diverse industries.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>Award Recognition</h3>
+                                <span class="timeline-year">2022</span>
+                            </div>
+                            <p>Received multiple industry awards for technical excellence and client satisfaction, establishing CodeDuo as a trusted name in freelance development.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>Scaling Impact</h3>
+                                <span class="timeline-year">2023-2024</span>
+                            </div>
+                            <p>Expanded service offerings to include mobile development and DevOps consulting, serving clients across healthcare, fintech, and e-commerce sectors.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>Innovation Focus</h3>
+                                <span class="timeline-year">2025-2026</span>
+                            </div>
+                            <p>Currently integrating AI/ML capabilities into our service offerings and exploring SaaS product development while maintaining our core freelance excellence.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Work Experience Section -->
+        <section class="section section-gray">
+            <div class="container">
+                <div class="section-icon-title">
+                    <svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                        <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                    </svg>
+                    <h2 class="section-title-left">Our Work Experience</h2>
+                </div>
+
+                <p class="goal-intro">Combined 15+ years of professional experience working with leading companies and startups.</p>
+
+                <div class="experience-grid">
+                    <!-- Alex Chen's Experience -->
+                    <div class="experience-section">
+                        <h3 class="experience-name">Alex Chen</h3>
+                        <div class="experience-list">
+                            <div class="experience-card">
+                                <h4>Senior Full-Stack Developer</h4>
+                                <p class="experience-company">TechCorp Solutions</p>
+                                <p class="experience-period">2016-2018</p>
+                                <p class="experience-description">Led development of enterprise web applications serving millions of users. Mentored junior developers and established coding standards.</p>
+                            </div>
+
+                            <div class="experience-card">
+                                <h4>Frontend Engineer</h4>
+                                <p class="experience-company">StartupX</p>
+                                <p class="experience-period">2014-2016</p>
+                                <p class="experience-description">Built responsive, high-performance web interfaces. Pioneered adoption of React and modern frontend tooling.</p>
+                            </div>
+
+                            <div class="experience-card">
+                                <h4>Junior Developer</h4>
+                                <p class="experience-company">Digital Agency Pro</p>
+                                <p class="experience-period">2012-2014</p>
+                                <p class="experience-description">Contributed to diverse client projects ranging from corporate websites to custom web applications.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sarah Martinez's Experience -->
+                    <div class="experience-section">
+                        <h3 class="experience-name">Sarah Martinez</h3>
+                        <div class="experience-list">
+                            <div class="experience-card">
+                                <h4>Backend Architect</h4>
+                                <p class="experience-company">CloudScale Systems</p>
+                                <p class="experience-period">2017-2018</p>
+                                <p class="experience-description">Designed and implemented scalable backend architectures handling millions of API requests daily. Specialized in microservices.</p>
+                            </div>
+
+                            <div class="experience-card">
+                                <h4>Software Engineer</h4>
+                                <p class="experience-company">DataFlow Inc</p>
+                                <p class="experience-period">2015-2017</p>
+                                <p class="experience-description">Developed real-time data processing pipelines and RESTful APIs. Optimized database performance for large-scale applications.</p>
+                            </div>
+
+                            <div class="experience-card">
+                                <h4>Junior Backend Developer</h4>
+                                <p class="experience-company">WebSolutions Co</p>
+                                <p class="experience-period">2013-2015</p>
+                                <p class="experience-description">Built server-side logic and database schemas for various web applications. Gained expertise in Python and Node.js.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Awards Section -->
+        <section class="section">
+            <div class="container">
+                <div class="section-icon-title">
+                    <svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="8" r="7"></circle>
+                        <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                    </svg>
+                    <h2 class="section-title-left">Our Awards</h2>
+                </div>
+
+                <p class="goal-intro">Recognition from industry organizations for our technical excellence and client dedication.</p>
+
+                <div class="awards-grid">
+                    <div class="award-card">
+                        <div class="award-header">
+                            <svg class="award-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="8" r="7"></circle>
+                                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                            </svg>
+                            <span class="award-year">2025</span>
+                        </div>
+                        <h3>Excellence in Web Development</h3>
+                        <p class="award-org">Tech Innovation Awards</p>
+                        <p class="award-description">Recognized for outstanding technical execution and innovative solutions in web application development.</p>
+                    </div>
+
+                    <div class="award-card">
+                        <div class="award-header">
+                            <svg class="award-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="8" r="7"></circle>
+                                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                            </svg>
+                            <span class="award-year">2024</span>
+                        </div>
+                        <h3>Client Satisfaction Award</h3>
+                        <p class="award-org">Freelancer Excellence Council</p>
+                        <p class="award-description">Awarded for maintaining 98% client satisfaction rate and delivering exceptional service quality.</p>
+                    </div>
+
+                    <div class="award-card">
+                        <div class="award-header">
+                            <svg class="award-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="8" r="7"></circle>
+                                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                            </svg>
+                            <span class="award-year">2023</span>
+                        </div>
+                        <h3>Best E-Commerce Solution</h3>
+                        <p class="award-org">Digital Commerce Awards</p>
+                        <p class="award-description">Won for the TechStyle Fashion e-commerce platform redesign that increased conversions by 35%.</p>
+                    </div>
+
+                    <div class="award-card">
+                        <div class="award-header">
+                            <svg class="award-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="8" r="7"></circle>
+                                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                            </svg>
+                            <span class="award-year">2023</span>
+                        </div>
+                        <h3>Innovation in Healthcare Tech</h3>
+                        <p class="award-org">HealthTech Forum</p>
+                        <p class="award-description">Recognized for developing HIPAA-compliant patient management system with telemedicine capabilities.</p>
+                    </div>
+
+                    <div class="award-card">
+                        <div class="award-header">
+                            <svg class="award-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="8" r="7"></circle>
+                                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                            </svg>
+                            <span class="award-year">2022</span>
+                        </div>
+                        <h3>Rising Star Developers</h3>
+                        <p class="award-org">Developer Community Awards</p>
+                        <p class="award-description">Honored as emerging leaders in the freelance development community for quality and professionalism.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="section section-gray">
+            <div class="container">
+                <div class="section-icon-title">
+                    <svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="16 18 22 12 16 6"></polyline>
+                        <polyline points="8 6 2 12 8 18"></polyline>
+                    </svg>
+                    <h2 class="section-title-left">Our Services</h2>
+                </div>
+
+                <p class="goal-intro">Comprehensive development services powered by deep technical expertise and years of hands-on experience.</p>
+
+                <div class="services-grid">
+                    <!-- Service 1 -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="16 18 22 12 16 6"></polyline>
+                                <polyline points="8 6 2 12 8 18"></polyline>
+                            </svg>
+                        </div>
+                        <h3>Custom Web Development</h3>
+                        <p class="service-description">Full-stack web applications built with modern frameworks and best practices. From MVPs to enterprise-scale solutions.</p>
+                        <div class="service-capabilities">
+                            <p class="capabilities-label">Key capabilities:</p>
+                            <ul>
+                                <li>• React, Next.js, Vue.js</li>
+                                <li>• Node.js, Python, Django</li>
+                                <li>• RESTful & GraphQL APIs</li>
+                                <li>• Progressive Web Apps</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                                <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                            </svg>
+                        </div>
+                        <h3>Mobile App Development</h3>
+                        <p class="service-description">Native and cross-platform mobile applications for iOS and Android with seamless user experiences.</p>
+                        <div class="service-capabilities">
+                            <p class="capabilities-label">Key capabilities:</p>
+                            <ul>
+                                <li>• React Native</li>
+                                <li>• Flutter</li>
+                                <li>• Native iOS & Android</li>
+                                <li>• App Store deployment</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                            </svg>
+                        </div>
+                        <h3>Database Design & Optimization</h3>
+                        <p class="service-description">Scalable database architectures and performance optimization for high-traffic applications.</p>
+                        <div class="service-capabilities">
+                            <p class="capabilities-label">Key capabilities:</p>
+                            <ul>
+                                <li>• PostgreSQL, MySQL</li>
+                                <li>• MongoDB, Redis</li>
+                                <li>• Query optimization</li>
+                                <li>• Data migration</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Service 4 -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+                            </svg>
+                        </div>
+                        <h3>Cloud Infrastructure</h3>
+                        <p class="service-description">Cloud architecture design, deployment, and management for reliable and scalable systems.</p>
+                        <div class="service-capabilities">
+                            <p class="capabilities-label">Key capabilities:</p>
+                            <ul>
+                                <li>• AWS, Google Cloud, Azure</li>
+                                <li>• Docker, Kubernetes</li>
+                                <li>• Serverless architecture</li>
+                                <li>• Auto-scaling solutions</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Service 5 -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="2" y1="12" x2="22" y2="12"></line>
+                                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                            </svg>
+                        </div>
+                        <h3>API Development & Integration</h3>
+                        <p class="service-description">Robust API design and third-party service integration for connected applications.</p>
+                        <div class="service-capabilities">
+                            <p class="capabilities-label">Key capabilities:</p>
+                            <ul>
+                                <li>• RESTful API design</li>
+                                <li>• GraphQL implementation</li>
+                                <li>• Third-party integrations</li>
+                                <li>• API documentation</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Service 6 -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                            </svg>
+                        </div>
+                        <h3>Security & Compliance</h3>
+                        <p class="service-description">Implementation of security best practices and compliance with industry standards.</p>
+                        <div class="service-capabilities">
+                            <p class="capabilities-label">Key capabilities:</p>
+                            <ul>
+                                <li>• Authentication & authorization</li>
+                                <li>• Data encryption</li>
+                                <li>• HIPAA, GDPR compliance</li>
+                                <li>• Security audits</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CTA Box -->
+                <div class="services-cta">
+                    <h3>Ready to Get Started?</h3>
+                    <p>Let's discuss your project and how our expertise can help you achieve your goals.</p>
+                    <button class="cta-button">Schedule a Consultation</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="16 18 22 12 16 6"></polyline>
+                            <polyline points="8 6 2 12 8 18"></polyline>
+                        </svg>
+                        <span>CodeDuo</span>
+                    </div>
+                    <p class="footer-text">Two passionate programmers delivering exceptional digital solutions.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="profile.html">Profile</a></li>
+                        <li><a href="summary.html">Summary</a></li>
+                        <li><a href="showcase.html">Showcase</a></li>
+                        <li><a href="qualification.html">Qualification</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3 class="footer-title">Contact</h3>
+                    <ul class="footer-contact">
+                        <li>Email: hello@codeduo.dev</li>
+                        <li>Phone: +1 (555) 123-4567</li>
+                        <li>Location: San Francisco, CA</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 CodeDuo. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
