@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summary - CodeDuo</title>
+    <link rel="stylesheet" href="css/cisc3003-PairAssgn.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="nav-content">
+                <a href="index.html" class="logo">
+                    <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="16 18 22 12 16 6"></polyline>
+                        <polyline points="8 6 2 12 8 18"></polyline>
+                    </svg>
+                    <span>CodeDuo</span>
+                </a>
+
+                <div class="desktop-nav">
+                    <a href="index.html" class="nav-link">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        </svg>
+                        <span>Home</span>
+                    </a>
+                    <a href="cisc3003-PairAssgn-profile.html" class="nav-link">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                        <span>Profile</span>
+                    </a>
+                    <a href="cisc3003-PairAssgn-summary.html" class="nav-link active">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                        </svg>
+                        <span>Summary</span>
+                    </a>
+                    <a href="cisc3003-PairAssgn-showcase.html" class="nav-link">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                        </svg>
+                        <span>Showcase</span>
+                    </a>
+                    <a href="cisc3003-PairAssgn-qualification.html" class="nav-link">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="8" r="7"></circle>
+                            <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                        </svg>
+                        <span>Qualification</span>
+                    </a>
+                </div>
+
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <svg class="menu-icon" id="menuIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                    <svg class="close-icon hidden" id="closeIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="mobile-nav hidden" id="mobileNav">
+                <a href="index.html" class="mobile-nav-link">
+                    <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                    </svg>
+                    <span>Home</span>
+                </a>
+                <a href="cisc3003-PairAssgn-profile.html" class="mobile-nav-link">
+                    <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                    <span>Profile</span>
+                </a>
+                <a href="cisc3003-PairAssgn-summary.html" class="mobile-nav-link active">
+                    <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                        <polyline points="14 2 14 8 20 8"></polyline>
+                    </svg>
+                    <span>Summary</span>
+                </a>
+                <a href="cisc3003-PairAssgn-showcase.html" class="mobile-nav-link">
+                    <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                        <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                    </svg>
+                    <span>Showcase</span>
+                </a>
+                <a href="cisc3003-PairAssgn-qualification.html" class="mobile-nav-link">
+                    <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="8" r="7"></circle>
+                        <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                    </svg>
+                    <span>Qualification</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title">Business Summary</h1>
+                <p class="page-subtitle">Our strategic goals, professional commitments, and future vision</p>
+            </div>
+        </section>
+
+        <!-- Business Goals -->
+        <section class="section">
+            <div class="container">
+                <div class="section-icon-title">
+                    <svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polyline points="12 6 12 12 16 14"></polyline>
+                    </svg>
+                    <h2 class="section-title-left">Our Business Goals</h2>
+                </div>
+
+                <p class="goal-intro">We set ambitious yet achievable goals to drive our business forward and deliver increasing value to our clients.</p>
+
+                <div class="goals-grid">
+                    <div class="goal-card">
+                        <h3>Revenue Growth</h3>
+                        <p>Achieve $500K in annual revenue by end of 2026 through diverse client projects</p>
+                        <div class="progress-section">
+                            <div class="progress-labels">
+                                <span>Progress</span>
+                                <span class="progress-percent">65%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 65%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="goal-card">
+                        <h3>Client Satisfaction</h3>
+                        <p>Maintain 95%+ client satisfaction rate with exceptional service delivery</p>
+                        <div class="progress-section">
+                            <div class="progress-labels">
+                                <span>Progress</span>
+                                <span class="progress-percent">92%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 92%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="goal-card">
+                        <h3>Market Expansion</h3>
+                        <p>Expand client base to include Fortune 500 companies and international clients</p>
+                        <div class="progress-section">
+                            <div class="progress-labels">
+                                <span>Progress</span>
+                                <span class="progress-percent">45%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 45%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="goal-card">
+                        <h3>Team Growth</h3>
+                        <p>Build a network of trusted freelance partners for larger project capacity</p>
+                        <div class="progress-section">
+                            <div class="progress-labels">
+                                <span>Progress</span>
+                                <span class="progress-percent">70%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Professional Commitments -->
+        <section class="section section-gray">
+            <div class="container">
+                <div class="section-icon-title">
+                    <svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                    </svg>
+                    <h2 class="section-title-left">Our Professional Commitments</h2>
+                </div>
+
+                <p class="goal-intro">These are the promises we make to every client we work with. Our reputation is built on consistently delivering on these commitments.</p>
+
+                <div class="commitments-grid">
+                    <div class="commitment-card">
+                        <svg class="commitment-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                        </svg>
+                        <p>Deliver all projects on time and within budget</p>
+                    </div>
+
+                    <div class="commitment-card">
+                        <svg class="commitment-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                        </svg>
+                        <p>Provide honest, transparent communication throughout every project</p>
+                    </div>
+
+                    <div class="commitment-card">
+                        <svg class="commitment-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                        </svg>
+                        <p>Follow industry best practices and maintain code quality standards</p>
+                    </div>
+
+                    <div class="commitment-card">
+                        <svg class="commitment-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                        </svg>
+                        <p>Offer post-launch support and maintenance for all clients</p>
+                    </div>
+
+                    <div class="commitment-card">
+                        <svg class="commitment-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                        </svg>
+                        <p>Respect client confidentiality and intellectual property rights</p>
+                    </div>
+
+                    <div class="commitment-card">
+                        <svg class="commitment-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                        </svg>
+                        <p>Stay current with emerging technologies and development trends</p>
+                    </div>
+                </div>
+
+                <div class="promise-box">
+                    <h3>Our Promise</h3>
+                    <p>We don't just write code – we build lasting partnerships. Every project is an opportunity to exceed expectations and create something remarkable together. Your success is our success, and we're committed to going above and beyond to make it happen.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Future Directions -->
+        <section class="section">
+            <div class="container">
+                <div class="section-icon-title">
+                    <svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+                    </svg>
+                    <h2 class="section-title-left">Our Future Directions</h2>
+                </div>
+
+                <p class="goal-intro">We're constantly evolving and expanding our capabilities. Here's where we're heading in the coming years.</p>
+
+                <div class="directions-grid">
+                    <div class="direction-card direction-blue">
+                        <div class="direction-header">
+                            <h3>AI & Machine Learning Integration</h3>
+                            <span class="timeline-badge">2026-2027</span>
+                        </div>
+                        <p>Incorporate AI-powered features into web applications, including natural language processing, recommendation systems, and predictive analytics.</p>
+                    </div>
+
+                    <div class="direction-card direction-pink">
+                        <div class="direction-header">
+                            <h3>Education & Training</h3>
+                            <span class="timeline-badge">2027</span>
+                        </div>
+                        <p>Create online courses and workshops to share our knowledge and establish thought leadership in the developer community.</p>
+                    </div>
+
+                    <div class="direction-card direction-teal">
+                        <div class="direction-header">
+                            <h3>Sustainable Tech Initiatives</h3>
+                            <span class="timeline-badge">2026-2028</span>
+                        </div>
+                        <p>Focus on building energy-efficient applications and contribute to green technology projects.</p>
+                    </div>
+                </div>
+
+                <div class="future-message">
+                    <p>The future is full of exciting possibilities, and we're ready to embrace them while staying true to our core values.</p>
+                    <div class="future-badge">
+                        <svg class="badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+                        </svg>
+                        <span>Stay tuned for more updates on our journey!</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="16 18 22 12 16 6"></polyline>
+                            <polyline points="8 6 2 12 8 18"></polyline>
+                        </svg>
+                        <span>CodeDuo</span>
+                    </div>
+                    <p class="footer-text">Two passionate programmers delivering exceptional digital solutions.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="cisc3003-PairAssgn-profile.html">Profile</a></li>
+                        <li><a href="cisc3003-PairAssgn-summary.html">Summary</a></li>
+                        <li><a href="cisc3003-PairAssgn-showcase.html">Showcase</a></li>
+                        <li><a href="cisc3003-PairAssgn-qualification.html">Qualification</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3 class="footer-title">Contact</h3>
+                    <ul class="footer-contact">
+                        <li>Email: hello@codeduo.dev</li>
+                        <li>Location: Macao SAR, China</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>CISC3003 Web Programming - 2026: Pair 06 DC32825-2 Diogo Barros | DC02702-1 Tatiana Muniz Rodriguez</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

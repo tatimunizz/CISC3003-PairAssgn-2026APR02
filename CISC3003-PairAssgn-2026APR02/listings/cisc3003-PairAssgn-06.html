@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeDuo - Expert Freelance Developers</title>
+    <link rel="stylesheet" href="css/cisc3003-PairAssgn.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="nav-content">
+                <a href="index.html" class="logo">
+                    <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="16 18 22 12 16 6"></polyline>
+                        <polyline points="8 6 2 12 8 18"></polyline>
+                    </svg>
+                    <span>CodeDuo</span>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <div class="desktop-nav">
+                    <a href="index.html" class="nav-link active">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        </svg>
+                        <span>Home</span>
+                    </a>
+                    <a href="cisc3003-PairAssgn-profile.html" class="nav-link">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                        <span>Profile</span>
+                    </a>
+                    <a href="cisc3003-PairAssgn-summary.html" class="nav-link">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                        </svg>
+                        <span>Summary</span>
+                    </a>
+                    <a href="cisc3003-PairAssgn-showcase.html" class="nav-link">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                        </svg>
+                        <span>Showcase</span>
+                    </a>
+                    <a href="cisc3003-PairAssgn-qualification.html" class="nav-link">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="8" r="7"></circle>
+                            <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                        </svg>
+                        <span>Qualification</span>
+                    </a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <svg class="menu-icon" id="menuIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                    <svg class="close-icon hidden" id="closeIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div class="mobile-nav hidden" id="mobileNav">
+                <a href="index.html" class="mobile-nav-link active">
+                    <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                    </svg>
+                    <span>Home</span>
+                </a>
+                <a href="cisc3003-PairAssgn-profile.html" class="mobile-nav-link">
+                    <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                    <span>Profile</span>
+                </a>
+                <a href="cisc3003-PairAssgn-summary.html" class="mobile-nav-link">
+                    <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                        <polyline points="14 2 14 8 20 8"></polyline>
+                    </svg>
+                    <span>Summary</span>
+                </a>
+                <a href="cisc3003-PairAssgn-showcase.html" class="mobile-nav-link">
+                    <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                        <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                    </svg>
+                    <span>Showcase</span>
+                </a>
+                <a href="cisc3003-PairAssgn-qualification.html" class="mobile-nav-link">
+                    <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="8" r="7"></circle>
+                        <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                    </svg>
+                    <span>Qualification</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-grid">
+                    <div class="hero-content">
+                        <h1 class="hero-title">Expert Freelance Development Solutions</h1>
+                        <p class="hero-text">
+                            Two passionate developers combining creativity and technical excellence to
+                            bring your digital vision to life.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="cisc3003-PairAssgn-showcase.html" class="btn btn-primary">
+                                View Our Work
+                                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </a>
+                            <a href="cisc3003-PairAssgn-profile.html" class="btn btn-secondary">Get in Touch</a>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <img src="images/hero-img.jpg" alt="Professional programming workspace">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Meet the CodeDuo Team</h2>
+                    <p class="section-subtitle">
+                        We're a dynamic duo of experienced developers committed to delivering
+                        high-quality, innovative solutions for our clients.
+                    </p>
+                </div>
+
+                <div class="partners-grid">
+                    <!-- Partner 1 -->
+                    <div class="partner-card">
+                        <div class="partner-image">
+                            <img src="images/diogo-profile.png" alt="Diogo de Barros">
+                        </div>
+                        <div class="partner-content">
+                            <h3 class="partner-name">Diogo Barros</h3>
+                            <p class="partner-role">CyberSecurity and Machine Learning Student</p>
+                            <p class="partner-description">
+                                With 2+ years of developing projects, Diogo specializes in analysing security vulnerabilities. Experient in Python, C, and Network Architecture.
+                            </p>
+                            <div class="specialties">
+                                <p class="specialties-label">Specialties:</p>
+                                <div class="specialty-tags">
+                                    <span class="tag">Python</span>
+                                    <span class="tag">C++ programming</span>
+                                    <span class="tag">Network Architecture</span>
+                                </div>
+                            </div>
+                            <a href="https://diogo-barros-portfolio.vercel.app/" target="_blank" class="btn btn-primary">
+                                View Portfolio
+                                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Partner 2 -->
+                    <div class="partner-card">
+                        <div class="partner-image">
+                            <img src="images/tatiana-profile.JPG" alt="Tatiana Muniz Rodriguez">
+                        </div>
+                        <div class="partner-content">
+                            <h3 class="partner-name">Tatiana Muniz Rodriguez</h3>
+                            <p class="partner-role">Backend Engineer & Data Architect</p>
+                            <p class="partner-description">
+                                Tatiana brings 3+ years of expertise in backend systems. She excels at designing robust APIs and optimizing data workflows for high-performance applications.
+                            </p>
+                            <div class="specialties">
+                                <p class="specialties-label">Specialties:</p>
+                                <div class="specialty-tags">
+                                    <span class="tag">NodeJS</span>
+                                    <span class="tag">MySQL & MongoDB</span>
+                                    <span class="tag">AWS</span>
+                                </div>
+                            </div>
+                            <a href="https://tatimunizz-portfolio.vercel.app" target="_blank" class="btn btn-primary">
+                                View Portfolio
+                                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section class="section section-gray">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Why Work With Us</h2>
+                    <p class="section-subtitle">
+                        We combine technical expertise with creative problem-solving to deliver
+                        exceptional results.
+                    </p>
+                </div>
+
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon feature-icon-blue">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="16 18 22 12 16 6"></polyline>
+                                <polyline points="8 6 2 12 8 18"></polyline>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Technical Excellence</h3>
+                        <p class="feature-text">
+                            5+ years of combined experience in cutting-edge technologies and best
+                            practices.
+                        </p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon feature-icon-green">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Collaborative Approach</h3>
+                        <p class="feature-text">
+                            We work closely with clients to understand their vision and deliver
+                            solutions that exceed expectations.
+                        </p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon feature-icon-purple">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2v20M2 12h20"></path>
+                                <path d="m19 6-7 7-7-7"></path>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Fast & Reliable</h3>
+                        <p class="feature-text">
+                            Timely delivery and ongoing support to ensure your project's success
+                            from start to finish.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container cta-container">
+                <h2 class="cta-title">Ready to Start Your Project?</h2>
+                <p class="cta-text">
+                    Let's discuss how we can help bring your ideas to life.
+                </p>
+                <a href="cisc3003-PairAssgn-profile.html#contact-info" class="btn btn-white">
+                    Contact Us Today
+                    <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="16 18 22 12 16 6"></polyline>
+                            <polyline points="8 6 2 12 8 18"></polyline>
+                        </svg>
+                        <span>CodeDuo</span>
+                    </div>
+                    <p class="footer-text">
+                        Two passionate programmers delivering exceptional digital solutions.
+                    </p>
+                </div>
+
+                <div class="footer-section">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="cisc3003-PairAssgn-profile.html">Profile</a></li>
+                        <li><a href="cisc3003-PairAssgn-summary.html">Summary</a></li>
+                        <li><a href="cisc3003-PairAssgn-showcase.html">Showcase</a></li>
+                        <li><a href="cisc3003-PairAssgn-qualification.html">Qualification</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3 class="footer-title">Contact</h3>
+                    <ul class="footer-contact">
+                        <li>Email: hello@codeduo.dev</li>
+                        <li>Location: Macao SAR, China</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>CISC3003 Web Programming - 2026: Pair 06 DC32825-2 Diogo Barros | DC02702-1 Tatiana Muniz Rodriguez</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
